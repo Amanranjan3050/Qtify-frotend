@@ -3,6 +3,7 @@ import Styles from "./AlbumCard.module.css";
 import { Card, CardContent, CardMedia, Chip, Tooltip } from "@mui/material";
 
 function AlbumCard({ album, type }) {
+  
   return (
     <div>
       {type==="album" ? (

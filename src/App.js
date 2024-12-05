@@ -13,7 +13,7 @@ function App() {
 
   const getTopAlbums = async () => {
     try {
-      let topAlbumsResp = await axios.get("http://qtify-backend-labs.crio.do/albums/top");
+      let topAlbumsResp = await axios.get("https://qtify-backend-labs.crio.do/albums/top");
       setTopAlbums(topAlbumsResp.data);
     } catch (err) {
       console.log(err);
@@ -22,7 +22,7 @@ function App() {
 
   const getNewAlbums = async () => {
     try {
-      let newAlbumsResp = await axios.get("http://qtify-backend-labs.crio.do/albums/new");
+      let newAlbumsResp = await axios.get("https://qtify-backend-labs.crio.do/albums/new");
       setNewAlbums(newAlbumsResp.data);
     } catch (err) {
       console.log(err);
@@ -31,7 +31,7 @@ function App() {
 
   const getSongsData = async () => {
     try{
-      let songsDataResp = await axios.get("http://qtify-backend-labs.crio.do/songs");
+      let songsDataResp = await axios.get("https://qtify-backend-labs.crio.do/songs");
       setSongsData(songsDataResp.data);
       setFilteredSongs(songsDataResp.data);
     } catch (err) {
